@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="bn" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Men's Black Leather Jacket | Moriom Style Hut</title>
     
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     
     <script>
@@ -15,15 +16,18 @@
             theme: {
                 extend: {
                     colors: {
-                        gold: '#D4AF37',
-                        'gold-dark': '#AA8C2C',
-                        dark: '#0a0a0a',
-                        surface: '#171717',
-                        surface2: '#262626'
+                        gold: '#E5C158',
+                        'gold-light': '#F9E79F',
+                        'gold-dark': '#B8860B',
+                        dark: '#070708',
+                        surface: '#121215',
+                        surface2: '#1C1C22',
+                        surface3: '#262630'
                     },
                     fontFamily: {
                         serif: ['"Playfair Display"', 'serif'],
-                        sans: ['"Inter"', 'sans-serif'],
+                        cinzel: ['"Cinzel"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
                     }
                 }
             }
@@ -32,43 +36,69 @@
     
     <style>
         body {
-            /* Premium radial gradient background for a studio-like feel */
-            background: radial-gradient(circle at 50% 0%, #1f1f1f 0%, #0a0a0a 80%);
-            background-color: #0a0a0a;
+            background: radial-gradient(circle at 50% -10%, #2a2215 0%, #0d0c0a 50%, #050506 100%);
             background-attachment: fixed;
-            color: #f5f5f5;
+            color: #f3f4f6;
         }
-        .text-gradient {
-            background: linear-gradient(to right, #D4AF37, #F3E5AB, #D4AF37);
+
+        /* Shimmer Gold Gradient Effect */
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #FFF099 0%, #E5C158 40%, #B8860B 80%, #F9E79F 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .btn-gold {
-            background: linear-gradient(135deg, #D4AF37 0%, #AA8C2C 100%);
-            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #E5C158 0%, #C59B27 50%, #997312 100%);
+            box-shadow: 0 4px 25px rgba(229, 193, 88, 0.25);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .btn-gold:hover {
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 6px 30px rgba(229, 193, 88, 0.45);
             transform: translateY(-2px);
         }
-        /* Hide scrollbar for cleaner look */
+
+        /* Glassmorphism */
+        .glass-card {
+            background: rgba(23, 23, 28, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(229, 193, 88, 0.15);
+        }
+
+        .glass-card-glow {
+            box-shadow: 0 0 35px -5px rgba(229, 193, 88, 0.08);
+        }
+
+        /* Gold Border Glow Animation */
+        @keyframes border-glow {
+            0%, 100% { border-color: rgba(229, 193, 88, 0.2); }
+            50% { border-color: rgba(229, 193, 88, 0.6); }
+        }
+        .glow-border {
+            animation: border-glow 3s infinite ease-in-out;
+        }
+
+        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #0a0a0a;
+            background: #070708;
         }
         ::-webkit-scrollbar-thumb {
-            background: #262626;
+            background: #262630;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #D4AF37;
+            background: #E5C158;
         }
-        /* WhatsApp Pulse Animation */
+
+        /* WhatsApp Pulse */
         @keyframes pulse-whatsapp {
             0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
             100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
         .whatsapp-float {
@@ -76,200 +106,328 @@
         }
     </style>
 </head>
-<body class="font-sans antialiased selection:bg-gold selection:text-dark">
+<body class="font-sans antialiased selection:bg-gold selection:text-dark pb-20 md:pb-0">
 
-    <header class="fixed w-full top-0 z-50 bg-dark/90 backdrop-blur-md border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <!-- Simple SVG Logo -->
-                <svg class="w-7 h-7 sm:w-8 sm:h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                <span class="font-serif text-lg sm:text-xl md:text-2xl font-bold tracking-widest text-white uppercase">Moriom <span class="text-gold">Style</span> Hut</span>
-            </div>
-            <a href="#order-section" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 border border-gold text-gold hover:bg-gold hover:text-dark transition-colors duration-300 rounded uppercase tracking-wider text-sm font-semibold">
-                Order Now
-            </a>
-        </div>
-    </header>
-
-    <section class="pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden relative">
-        <!-- Background subtle glow -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-3/4 h-3/4 bg-gold/5 rounded-full blur-[120px] -z-10"></div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
-                
-                <div class="mb-12 lg:mb-0 text-center lg:text-left">
-                    <span class="text-gold uppercase tracking-[0.2em] font-semibold text-sm mb-4 block">New Arrival - Limited Edition</span>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6 text-white">
-                        Premium Men's <br>
-                        <span class="text-gradient">Black Leather Jacket</span>
-                    </h1>
-                    <p class="text-gray-400 text-lg mb-8 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
-                        Elevate your style with our impeccably crafted black leather jacket. Tailored for the modern Bangladeshi gentleman, offering unmatched luxury, durability, and a perfect fit for any occasion.
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-                        <a href="#order-section" class="btn-gold w-full sm:w-auto text-dark font-bold px-10 py-4 rounded uppercase tracking-wide flex items-center justify-center gap-2">
-                            <span>Buy Now - BDT ৫,০০০ টাকা মাত্র।</span>
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </a>
-                        <p class="text-sm text-gray-500 mt-2 sm:mt-0 flex items-center gap-1">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            Cash on Delivery Available
-                        </p>
-                    </div>
-                </div>
-
-                <div class="relative mx-auto w-full max-w-md lg:max-w-full lg:ml-auto">
-                    <!-- Decorative border frame -->
-                    <div class="absolute inset-0 border border-gold/30 translate-x-4 translate-y-4 rounded-lg -z-10"></div>
-                    <img 
-                        src="j1.jpeg" 
-                        alt="Premium Men's Black Leather Jacket" 
-                        class="w-full h-auto rounded-lg shadow-2xl object-cover"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x800/171717/D4AF37?text=Premium+Leather+Jacket';"
-                    >
-                    <!-- Floating Badge -->
-                    <div class="absolute -bottom-6 -left-6 bg-surface border border-gold/50 px-6 py-4 rounded-lg shadow-xl flex items-center gap-4">
-                        <div class="bg-gold/20 p-3 rounded-full">
-                            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
-                        <div>
-                            <p class="text-white font-bold">Limited Stock</p>
-                            <p class="text-xs text-gray-400">Order before it's gone</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <div class="bg-gold text-dark py-4">
-        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-8 md:gap-16 text-sm md:text-base font-semibold uppercase tracking-wider">
-            <div class="flex items-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
-                Inside Dhaka: 80 Tk
-            </div>
-            <div class="flex items-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                Outside Dhaka: 140 Tk
-            </div>
-            <div class="flex items-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                100% Cash on Delivery
-            </div>
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-gold-dark via-gold to-gold-dark text-dark text-center py-2 px-4 font-semibold text-xs sm:text-sm tracking-wide shadow-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
+            <span>🔥 শীতকালীন স্পেশাল অফার - স্টক সীমিত! যেকোনো সাইজ মাত্র ৫,০০০ টাকায় ক্যাশ অন ডেলিভারিতে অর্ডার করুন!</span>
         </div>
     </div>
 
-    <section class="py-20 bg-surface">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Uncompromising Quality</h2>
-                <div class="w-24 h-1 bg-gold mx-auto rounded"></div>
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-dark/90 backdrop-blur-xl border-b border-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <div>
+                    <span class="font-cinzel text-lg sm:text-2xl font-bold tracking-widest text-white block leading-none">MORIOM <span class="text-gradient-gold">STYLE</span> HUT</span>
+                    <span class="text-[10px] text-gray-400 tracking-widest uppercase block mt-1">Luxury Apparel Collection</span>
+                </div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Feature 1 -->
-                <div class="bg-surface2 p-8 rounded-xl border border-white/5 hover:border-gold/30 transition-colors group">
-                    <div class="w-14 h-14 bg-dark rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform border border-white/10">
-                        <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Premium Leather</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Crafted from high-grade PU/Faux leather that looks and feels like authentic full-grain, offering durability without the extreme cost.</p>
-                </div>
+            <div class="flex items-center gap-4">
+                <a href="#order-section" class="btn-gold hidden sm:inline-flex items-center justify-center px-6 py-2.5 text-dark font-bold rounded uppercase tracking-wider text-xs">
+                    Order Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-10 pb-16 lg:pt-20 lg:pb-24 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gold/10 rounded-full blur-[150px] pointer-events-none -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
                 
-                <!-- Feature 2 -->
-                <div class="bg-surface2 p-8 rounded-xl border border-white/5 hover:border-gold/30 transition-colors group">
-                    <div class="w-14 h-14 bg-dark rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform border border-white/10">
-                        <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                <!-- Left Details -->
+                <div class="lg:col-span-7 mb-12 lg:mb-0 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border-gold/30 text-gold text-xs font-semibold uppercase tracking-widest mb-6">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h8V3a1 1 0 112 0v1h1a2 2 0 012 2v11a2 2 0 01-2 2H3a2 2 0 01-2-2V6a2 2 0 012-2h1V3a1 1 0 011-1zm1 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                        <span>Winter Collection 2026 Edition</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Wind & Water Resistant</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Engineered to protect you against harsh winter winds and light rain, keeping you warm and stylish in Bangladeshi weather.</p>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6 text-white">
+                        Royal Executive Men's <br>
+                        <span class="text-gradient-gold">Black Leather Jacket</span>
+                    </h1>
+
+                    <p class="text-gray-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        অভিজাত পুরুষদের প্রথম পছন্দ। সেরা কোয়ালিটির লেদার, নিখুঁত স্টিচিং এবং অসাধারণ ফিটিং যা আপনাকে দিবে এক রাজকীয় ও এলিগেন্ট লুক।
+                    </p>
+                    
+                    <!-- Pricing & Guarantee Badge -->
+                    <div class="glass-card p-6 rounded-2xl max-w-xl mx-auto lg:mx-0 mb-8 border-gold/20">
+                        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-4 mb-4">
+                            <div>
+                                <span class="text-xs text-gray-400 block uppercase tracking-wider">Special Discount Price</span>
+                                <div class="flex items-baseline gap-3">
+                                    <span class="text-3xl sm:text-4xl font-bold text-gradient-gold">BDT ৫,০০০</span>
+                                    <span class="text-lg text-gray-500 line-through">BDT ৭,২০০</span>
+                                </div>
+                            </div>
+                            <span class="bg-red-500/20 text-red-400 border border-red-500/40 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                                Save BDT ২,২০০ (৩০% Off)
+                            </span>
+                        </div>
+
+                        <!-- Highlights -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-left text-xs text-gray-300">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>১০০% ক্যাশ অন ডেলিভারি</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>দেখে ট্রাই করে পেমেন্ট</span>
+                            </div>
+                            <div class="flex items-center gap-2 col-span-2 sm:col-span-1">
+                                <svg class="w-4 h-4 text-gold shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>৭ দিনের ইজি সাইজ চেঞ্জ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                        <a href="#order-section" class="btn-gold w-full sm:w-auto text-dark font-bold px-10 py-4 rounded-xl text-sm uppercase tracking-wider flex items-center justify-center gap-3">
+                            <span>অর্ডার করতে চাই - BDT ৫,০০০</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <button onclick="openSizeModal()" class="w-full sm:w-auto px-6 py-4 rounded-xl border border-gold/40 text-gold hover:bg-gold/10 transition-colors text-sm font-semibold flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M12 7h.01M15 7h.01M12 4h.01M15 4h.01M9 4h.01"></path></svg>
+                            <span>সাইজ গাইড দেখুন</span>
+                        </button>
+                    </div>
                 </div>
-                
-                <!-- Feature 3 -->
-                <div class="bg-surface2 p-8 rounded-xl border border-white/5 hover:border-gold/30 transition-colors group">
-                    <div class="w-14 h-14 bg-dark rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform border border-white/10">
-                        <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+
+                <!-- Right Product Showcase -->
+                <div class="lg:col-span-5 relative mx-auto w-full max-w-md lg:max-w-none">
+                    <!-- Glow & Golden Frame -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-gold/50 via-gold-dark/30 to-gold/50 rounded-2xl blur-lg opacity-70 animate-pulse"></div>
+                    
+                    <div class="relative glass-card p-3 rounded-2xl glow-border">
+                        <img 
+                            src="j1.jpeg" 
+                            alt="Premium Men's Black Leather Jacket" 
+                            class="w-full h-[450px] sm:h-[520px] object-cover object-top rounded-xl shadow-2xl"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x800/121215/E5C158?text=Premium+Leather+Jacket';"
+                        >
+
+                        <!-- Luxury Badges -->
+                        <div class="absolute top-6 right-6 bg-dark/90 backdrop-blur-md border border-gold/40 text-gold text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                            ★ 4.9 Premium Rated
+                        </div>
+
+                        <div class="absolute bottom-6 left-6 right-6 bg-dark/90 backdrop-blur-md border border-gold/30 p-4 rounded-xl flex items-center justify-between shadow-xl">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                                </div>
+                                <div class="text-left">
+                                    <p class="text-white text-xs font-bold">100% Quality Assurance</p>
+                                    <p class="text-[11px] text-gray-400">পার্সেল খুলে দেখে চেক করার সুযোগ</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Perfect Fit</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Modern slim-fit tailoring designed specifically for the South Asian physique. Available in M, L, XL sizes.</p>
                 </div>
-                
-                <!-- Feature 4 -->
-                <div class="bg-surface2 p-8 rounded-xl border border-white/5 hover:border-gold/30 transition-colors group">
-                    <div class="w-14 h-14 bg-dark rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform border border-white/10">
-                        <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Stylish Zippers</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Fitted with heavy-duty, smooth metallic zippers and carefully placed functional pockets for a rugged, biker-inspired look.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Pricing Banner -->
+    <section class="bg-gradient-to-r from-surface via-surface2 to-surface border-y border-gold/20 py-6">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-3 rounded-lg border border-white/5 bg-dark/40">
+                    <span class="text-gold text-xs uppercase block font-semibold">ইনসাইড ঢাকা</span>
+                    <span class="text-white font-bold text-lg">৳ ৮০ টাকা</span>
+                </div>
+                <div class="p-3 rounded-lg border border-gold/30 bg-gold/5">
+                    <span class="text-gold text-xs uppercase block font-semibold">আর্বান / সাব-এরিয়া</span>
+                    <span class="text-gradient-gold font-bold text-lg">৳ ১০০ টাকা</span>
+                </div>
+                <div class="p-3 rounded-lg border border-white/5 bg-dark/40">
+                    <span class="text-gold text-xs uppercase block font-semibold">ঢাকার বাইরে</span>
+                    <span class="text-white font-bold text-lg">৳ ১৪০ টাকা</span>
+                </div>
+                <div class="p-3 rounded-lg border border-white/5 bg-dark/40">
+                    <span class="text-gold text-xs uppercase block font-semibold">পেমেন্ট মেথড</span>
+                    <span class="text-green-400 font-bold text-lg">ক্যাশ অন ডেলিভারি</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="order-section" class="py-20 relative">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-surface border border-white/10 rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
-                
-                <div class="md:w-5/12 bg-surface2 p-6 md:p-10 flex flex-col justify-center relative overflow-hidden">
-                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-gold/10 rounded-full blur-2xl"></div>
-                    <h3 class="text-3xl font-serif font-bold text-white mb-2">Special Offer</h3>
-                    <p class="text-gray-400 mb-8">Premium Black Leather Jacket</p>
-                    
-                    <div class="mb-8">
-                        <span class="text-xl text-gray-500 line-through block mb-1">Regular Price: BDT ৭,২০০ টাকা টাকা মাত্র।</span>
-                        <div class="flex items-baseline gap-2">
-                            <span class="text-5xl font-bold text-gold">BDT ৫,০০০ টাকা মাত্র।</span>
-                        </div>
-                        <span class="inline-block mt-3 bg-red-500/20 text-red-400 border border-red-500/30 px-3 py-1 rounded text-sm font-semibold">Save 30% Today</span>
-                    </div>
+    <!-- Product Key Features -->
+    <section class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-gold text-xs font-bold uppercase tracking-widest block mb-2">Why Choose Us</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">আমাদের জ্যাকেটের প্রিমিয়াম বৈশিষ্ট্যসমূহ</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-gold to-gold-dark mx-auto rounded-full"></div>
+            </div>
 
-                    <ul class="space-y-4 text-sm text-gray-300">
-                        <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            Pay when you receive the product
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            Fast Delivery in 24-72 Hours
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            7 Days Easy Exchange Policy
-                        </li>
-                    </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature 1 -->
+                <div class="glass-card p-8 rounded-2xl border-gold/10 hover:border-gold/40 transition-all group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">হাই-গ্রেড প্রিমিয়াম লেদার</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">উন্নতমানের সফট পিইউ/ফক্স লেদার দিয়ে তৈরি, যা দীর্ঘদিন ব্যবহারেও চামড়া উঠবে না বা ফাটবে না।</p>
                 </div>
 
-                <div class="md:w-7/12 p-6 md:p-10 bg-dark">
-                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-white/10 pb-4">Provide Delivery Details</h3>
-                    
+                <!-- Feature 2 -->
+                <div class="glass-card p-8 rounded-2xl border-gold/10 hover:border-gold/40 transition-all group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">উইন্ড ও ওয়াটার রেজিস্ট্যান্ট</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">কনকনে শীতের তীব্র বাতাস এবং হালকা বৃষ্টি থেকে আপনাকে সম্পূর্ণ সুরক্ষিত রাখবে।</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass-card p-8 rounded-2xl border-gold/10 hover:border-gold/40 transition-all group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">পারফেক্ট বডি ফিটিং</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">সাউথ এশিয়ান বডি শেইপ অনুযায়ী মেজারমেন্ট করা আধুনিক স্লিম-ফিট কাটিং ও স্টিচিং।</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="glass-card p-8 rounded-2xl border-gold/10 hover:border-gold/40 transition-all group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">হেভি ডিউটি মেটাল জিপার</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">দীর্ঘস্থায়ী মসৃণ রানার জিপার এবং পকেটের নিখুঁত সিকিউরিটিং ডিজাইন।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Reviews / Testimonials -->
+    <section class="py-16 bg-surface/50 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-gold text-xs font-bold uppercase tracking-widest block mb-2">Customer Feedback</span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white">গ্রাহকদের বিশ্বস্ত মন্তব্য</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="flex items-center gap-1 text-gold mb-3 text-sm">★★★★★</div>
+                    <p class="text-gray-300 text-xs italic mb-4">"জ্যাকেটটা হাতে পাওয়ার পর সত্যিই অবাক হয়েছি! কোয়ালিটি ছবির চেয়েও সুন্দর। ডেলিভারিম্যান সামনে রেখে দেখে নিয়েছি।"</p>
+                    <div class="text-xs font-bold text-white">রফিকুল ইসলাম <span class="text-gray-500 font-normal">- ধানমন্ডি, ঢাকা</span></div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="flex items-center gap-1 text-gold mb-3 text-sm">★★★★★</div>
+                    <p class="text-gray-300 text-xs italic mb-4">"আর্বান এরিয়াতে ২ দিনের মধ্যেই পেয়েছি। জ্যাকেটের ফিটিং একদম পারফেক্ট হয়েছে। কাপড়ের লেদার ফিনিশিং খাস!"</p>
+                    <div class="text-xs font-bold text-white">তানভীর আহমেদ <span class="text-gray-500 font-normal">- উত্তরা, ঢাকা</span></div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="flex items-center gap-1 text-gold mb-3 text-sm">★★★★★</div>
+                    <p class="text-gray-300 text-xs italic mb-4">"প্রথমে ভেবেছিলাম কালার বা সাইজ কেমন হবে, কিন্তু আসার পর পরে দেখি সাইজ এল একদম পারফেক্ট। সার্ভিস খুব ভালো।"</p>
+                    <div class="text-xs font-bold text-white">শাহরিয়ার হোসাইন <span class="text-gray-500 font-normal">- চট্টগ্রাম</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Checkout Section -->
+    <section id="order-section" class="py-20 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="glass-card rounded-3xl overflow-hidden glow-border shadow-2xl grid grid-cols-1 lg:grid-cols-12">
+                
+                <!-- Summary Column -->
+                <div class="lg:col-span-5 bg-gradient-to-b from-surface2 to-surface p-8 sm:p-10 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-gold/15">
+                    <div>
+                        <div class="inline-block bg-gold/10 text-gold border border-gold/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                            Hot Deal Offer
+                        </div>
+                        <h3 class="text-3xl font-serif font-bold text-white mb-2">অর্ডার নিশ্চিত করুন</h3>
+                        <p class="text-gray-400 text-xs mb-6">ফর্মটি সঠিক তথ্য দিয়ে পূরণ করে "Confirm Order" বাটনে ক্লিক করুন।</p>
+
+                        <!-- Product Summary Card -->
+                        <div class="bg-dark/60 p-4 rounded-xl border border-white/10 mb-6 flex gap-4 items-center">
+                            <img src="j1.jpeg" alt="Jacket Thumbnail" class="w-20 h-20 object-cover rounded-lg border border-gold/30" onerror="this.onerror=null; this.src='https://placehold.co/200x200/121215/E5C158?text=Jacket';">
+                            <div>
+                                <h4 class="text-white text-sm font-bold">Premium Black Leather Jacket</h4>
+                                <p class="text-xs text-gold font-semibold mt-1">BDT ৫,০০০ টাকা</p>
+                                <span class="text-[11px] text-green-400 block mt-1">✔ ক্যাশ অন ডেলিভারি প্রযোজ্য</span>
+                            </div>
+                        </div>
+
+                        <!-- Price Breakdown -->
+                        <div class="space-y-3 text-xs border-t border-white/10 pt-4 text-gray-300">
+                            <div class="flex justify-between">
+                                <span>পণ্যের মূল্য:</span>
+                                <span>BDT ৫,০০০ টাকা</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>ডেলিভারি চার্জ:</span>
+                                <span id="summary-delivery-charge" class="text-gold font-semibold">৳ ৮০ টাকা</span>
+                            </div>
+                            <div class="flex justify-between text-base font-bold text-white border-t border-white/10 pt-3">
+                                <span>সর্বমোট মূল্য:</span>
+                                <span id="summary-total-price" class="text-gradient-gold">BDT ৫,০৮০ টাকা</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-white/10 text-xs text-gray-400 space-y-2">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>কোনো অগ্রিম পেমেন্ট করতে হবে না</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>পার্সেল পাওয়ার পর রাইডারের সামনে চেক করবেন</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7 p-8 sm:p-10 bg-dark/80">
                     <form id="checkout-form" class="space-y-5">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-400 mb-1">Full Name</label>
-                            <input type="text" id="name" required class="w-full bg-surface border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors placeholder-gray-600" placeholder="e.g. Rakib Hasan">
-                        </div>
                         
+                        <!-- Name -->
                         <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-400 mb-1">Mobile Number</label>
-                            <input type="tel" id="phone" required class="w-full bg-surface border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors placeholder-gray-600" placeholder="01XXX-XXXXXX">
+                            <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1.5">আপনার নাম *</label>
+                            <input type="text" id="name" required class="w-full bg-surface2 border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors placeholder-gray-500" placeholder="যেমন: মোঃ রাকিবুল হাসান">
                         </div>
-                        
+
+                        <!-- Phone -->
                         <div>
-                            <label for="address" class="block text-sm font-medium text-gray-400 mb-1">Full Delivery Address</label>
-                            <textarea id="address" required rows="2" class="w-full bg-surface border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors placeholder-gray-600 resize-none" placeholder="House/Road no, Area, City"></textarea>
+                            <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1.5">মোবাইল নম্বর *</label>
+                            <input type="tel" id="phone" required class="w-full bg-surface2 border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors placeholder-gray-500" placeholder="01XXXXXXXXX">
                         </div>
-                        
+
+                        <!-- Address -->
                         <div>
-                            <label for="size" class="block text-sm font-medium text-gray-400 mb-1">Select Size</label>
+                            <label for="address" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1.5">সম্পূর্ণ ডেলিভারি ঠিকানা *</label>
+                            <textarea id="address" required rows="2" class="w-full bg-surface2 border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors placeholder-gray-500 resize-none" placeholder="বাসা/রোড নম্বর, এরিয়া, জেলা/থানা"></textarea>
+                        </div>
+
+                        <!-- Delivery Location Select -->
+                        <div>
+                            <label for="delivery-area" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1.5">ডেলিভারি এরিয়া সিলেক্ট করুন *</label>
                             <div class="relative">
-                                <select id="size" required class="w-full bg-surface border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors appearance-none cursor-pointer">
-                                    <option value="" disabled selected>Choose your size...</option>
-                                    <option value="M">Medium (M) - Chest 38", Sleeve 27"</option>
-                                    <option value="L">Large (L) - Chest 40", Sleeve 28"</option>
-                                    <option value="XL">Extra Large (XL) - Chest 42",Sleeve 29"</option>
-                                    
+                                <select id="delivery-area" onchange="updateCalculations()" required class="w-full bg-surface2 border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold appearance-none cursor-pointer">
+                                    <option value="80" selected>ঢাকার ভিতরে - ৳ ৮০ টাকা</option>
+                                    <option value="100">আর্বান / সাব-এরিয়া - ৳ ১০০ টাকা</option>
+                                    <option value="140">ঢাকার বাইরে - ৳ ১৪০ টাকা</option>
                                 </select>
                                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-400">
                                     <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -277,87 +435,185 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn-gold w-full text-dark font-bold text-lg px-6 py-4 rounded uppercase tracking-wider mt-4 shadow-lg shadow-gold/20">
-                            Confirm Order - Cash on Delivery
+                        <!-- Size Pills -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-gray-300">সাইজ সিলেক্ট করুন *</label>
+                                <button type="button" onclick="openSizeModal()" class="text-xs text-gold underline font-semibold">সাইজ চার্ট দেখুন</button>
+                            </div>
+                            
+                            <input type="hidden" id="selected-size" value="M" required>
+                            
+                            <div class="grid grid-cols-3 gap-3">
+                                <button type="button" onclick="selectSize('M', this)" class="size-pill-btn py-3 border border-gold bg-gold/20 text-gold rounded-xl font-bold text-xs uppercase flex flex-col items-center justify-center gap-1 transition-all">
+                                    <span>Medium (M)</span>
+                                    <span class="text-[10px] text-gray-300 font-normal">Chest 38"</span>
+                                </button>
+                                <button type="button" onclick="selectSize('L', this)" class="size-pill-btn py-3 border border-white/10 bg-surface2 text-gray-300 rounded-xl font-bold text-xs uppercase flex flex-col items-center justify-center gap-1 transition-all hover:border-gold/50">
+                                    <span>Large (L)</span>
+                                    <span class="text-[10px] text-gray-400 font-normal">Chest 40"</span>
+                                </button>
+                                <button type="button" onclick="selectSize('XL', this)" class="size-pill-btn py-3 border border-white/10 bg-surface2 text-gray-300 rounded-xl font-bold text-xs uppercase flex flex-col items-center justify-center gap-1 transition-all hover:border-gold/50">
+                                    <span>XL</span>
+                                    <span class="text-[10px] text-gray-400 font-normal">Chest 42"</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-gold w-full text-dark font-bold text-base px-6 py-4 rounded-xl uppercase tracking-wider mt-6 flex items-center justify-center gap-2">
+                            <span>অর্ডার কনফার্ম করুন (ক্যাশ অন ডেলিভারি)</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </button>
+
                     </form>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <footer class="border-t border-white/10 py-10 text-center">
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-10 bg-dark text-center">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-center items-center gap-2 mb-4">
-                <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                <span class="font-serif text-xl font-bold tracking-widest text-white uppercase">Moriom <span class="text-gold">Style</span> Hut</span>
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <div class="w-8 h-8 rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <span class="font-cinzel text-xl font-bold tracking-widest text-white uppercase">MORIOM <span class="text-gold">STYLE</span> HUT</span>
             </div>
-            <p class="text-gray-500 text-sm mb-4">Dhaka, Bangladesh | Support: +880 1967939895</p>
-            <p class="text-gray-600 text-xs">&copy; 2026 Moriom Style Hut. All rights reserved.</p>
+            <p class="text-gray-400 text-xs mb-3">ঢাকা, বাংলাদেশ | হটলাইন / ওয়াটসঅ্যাপ: +880 1967939895</p>
+            <p class="text-gray-600 text-[11px]">&copy; 2026 Moriom Style Hut. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- Floating WhatsApp Support Button -->
-    <a href="https://wa.me/8801967939895?text=Hello%20Moriom%20Style%20Hut!%20I%20need%20some%20help%20regarding%20the%20Premium%20Leather%20Jacket." target="_blank" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[90] bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_4px_15px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform duration-300 whatsapp-float group">
-        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.012c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-        <span class="absolute right-16 bg-surface border border-gold/30 text-white text-xs px-3 py-1.5 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none drop-shadow-xl">Need Help? Chat with us!</span>
+    <a href="https://wa.me/8801967939895?text=Hello%20Moriom%20Style%20Hut!%20I%20have%20a%20question%20about%20the%20Premium%20Leather%20Jacket." target="_blank" class="fixed bottom-20 md:bottom-8 right-6 z-[90] bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(37,211,102,0.5)] hover:scale-110 transition-transform duration-300 whatsapp-float group">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.012c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span class="absolute right-16 bg-surface border border-gold/30 text-white text-xs px-3 py-1.5 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-xl">সহায়তা লাগবে? ওয়াটসঅ্যাপে মেসেজ দিন</span>
     </a>
 
-    <div id="success-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden bg-dark/80 backdrop-blur-sm p-4">
-        <div class="bg-surface border border-gold/30 p-8 rounded-xl max-w-md w-full text-center shadow-2xl transform scale-95 opacity-0 transition-all duration-300" id="modal-content">
-            <div class="w-16 h-16 bg-green-500/20 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+    <!-- Sticky Mobile Order Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 bg-dark/95 backdrop-blur-md border-t border-gold/30 p-3 md:hidden flex items-center justify-between gap-3 shadow-2xl">
+        <div>
+            <span class="text-[10px] text-gray-400 block uppercase">Special Price</span>
+            <span class="text-base font-bold text-gold">BDT ৫,০০০</span>
+        </div>
+        <a href="#order-section" class="btn-gold px-6 py-2.5 text-dark font-bold rounded-lg text-xs uppercase tracking-wider">
+            এখনই অর্ডার করুন
+        </a>
+    </div>
+
+    <!-- Size Guide Modal -->
+    <div id="size-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden bg-dark/80 backdrop-blur-md p-4">
+        <div class="glass-card p-6 rounded-2xl max-w-md w-full border-gold/30 relative shadow-2xl">
+            <button onclick="closeSizeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 class="text-xl font-serif font-bold text-white mb-1">সাইজ মেজারমেন্ট গাইড</h3>
+            <p class="text-xs text-gray-400 mb-6">আপনার সঠিক সাইজটি নির্বাচন করতে নিচের মেজারমেন্ট দেখুন:</p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs text-gray-300 border-collapse">
+                    <thead>
+                        <tr class="border-b border-gold/30 text-gold uppercase">
+                            <th class="py-2.5 px-3">Size</th>
+                            <th class="py-2.5 px-3">Chest (চেস্ট)</th>
+                            <th class="py-2.5 px-3">Sleeve (হাতা)</th>
+                            <th class="py-2.5 px-3">Length (লম্বা)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/10">
+                        <tr>
+                            <td class="py-3 px-3 font-bold text-white">Medium (M)</td>
+                            <td class="py-3 px-3">38" Inches</td>
+                            <td class="py-3 px-3">27" Inches</td>
+                            <td class="py-3 px-3">26" Inches</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-3 font-bold text-white">Large (L)</td>
+                            <td class="py-3 px-3">40" Inches</td>
+                            <td class="py-3 px-3">28" Inches</td>
+                            <td class="py-3 px-3">27" Inches</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-3 font-bold text-white">XL</td>
+                            <td class="py-3 px-3">42" Inches</td>
+                            <td class="py-3 px-3">29" Inches</td>
+                            <td class="py-3 px-3">28" Inches</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <h3 class="text-2xl font-serif font-bold text-white mb-2">Order Confirmed!</h3>
-            <p class="text-gray-400 mb-6">Thank you for your order. Our team will call you shortly to verify your delivery address.</p>
-            <button onclick="closeModal()" class="w-full border border-gold text-gold hover:bg-gold hover:text-dark py-3 rounded font-semibold transition-colors uppercase tracking-wide">
-                Return to Site
+
+            <button onclick="closeSizeModal()" class="w-full btn-gold text-dark font-bold py-3 rounded-xl text-xs uppercase tracking-wider mt-6">
+                গাইড বুঝেছি, এখন সাইজ সিলেক্ট করবো
             </button>
         </div>
     </div>
 
+    <!-- Scripts -->
     <script>
+        // Update Live Price Breakdown
+        function updateCalculations() {
+            const deliverySelect = document.getElementById('delivery-area');
+            const deliveryCharge = parseInt(deliverySelect.value) || 80;
+            const productPrice = 5000;
+            const totalPrice = productPrice + deliveryCharge;
+
+            document.getElementById('summary-delivery-charge').innerText = `৳ ${deliveryCharge} টাকা`;
+            document.getElementById('summary-total-price').innerText = `BDT ${totalPrice.toLocaleString('bn-BD')} টাকা`;
+        }
+
+        // Size Pill Selection
+        function selectSize(size, btnElement) {
+            document.getElementById('selected-size').value = size;
+            
+            const pills = document.querySelectorAll('.size-pill-btn');
+            pills.forEach(pill => {
+                pill.classList.remove('border-gold', 'bg-gold/20', 'text-gold');
+                pill.classList.add('border-white/10', 'bg-surface2', 'text-gray-300');
+            });
+
+            btnElement.classList.remove('border-white/10', 'bg-surface2', 'text-gray-300');
+            btnElement.classList.add('border-gold', 'bg-gold/20', 'text-gold');
+        }
+
+        // Modals
+        function openSizeModal() {
+            document.getElementById('size-modal').classList.remove('hidden');
+        }
+        function closeSizeModal() {
+            document.getElementById('size-modal').classList.add('hidden');
+        }
+
+        // Checkout Form Submission to WhatsApp
         document.addEventListener('DOMContentLoaded', () => {
             const form = document.getElementById('checkout-form');
 
             form.addEventListener('submit', (e) => {
-                e.preventDefault(); // Page reload bondho kora
+                e.preventDefault();
                 
-                // Form theke data gulo nawa
                 const name = document.getElementById('name').value;
                 const phone = document.getElementById('phone').value;
                 const address = document.getElementById('address').value;
-                const size = document.getElementById('size').value;
-
-                // Apnar Business WhatsApp Number din (88 soho, kono + chara, jemon: 8801700000000)
-                const whatsappNumber = "8801967939895"; // <--- Ekhane apnar number boshan
+                const size = document.getElementById('selected-size').value;
                 
-                // WhatsApp a je message ti jabe seta sajano
-                const message = `Hello Moriom Style Hut! I want to confirm an order.%0A%0A*Product:* Premium Black Leather Jacket%0A*Size:* ${size}%0A*Price:* BDT ৫,০০০%0A%0A*Customer Details:*%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Address:* ${address}%0A%0ADelivery Charge Inside Dhaka 80, Outside Dhaka 140. Please confirm my order.`;
+                const deliverySelect = document.getElementById('delivery-area');
+                const deliveryCharge = parseInt(deliverySelect.value);
+                const selectedAreaText = deliverySelect.options[deliverySelect.selectedIndex].text;
+                const totalPrice = 5000 + deliveryCharge;
 
-                // WhatsApp web link toiri kora
+                const whatsappNumber = "8801967939895";
+                
+                const message = `Hello Moriom Style Hut! I want to confirm an order.%0A%0A*Product:* Premium Black Leather Jacket%0A*Size:* ${size}%0A*Price:* BDT ৫,০০০%0A*Delivery Charge:* BDT ${deliveryCharge}%0A*Total Bill:* BDT ${totalPrice}%0A%0A*Customer Details:*%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Address:* ${address}%0A*Location Type:* ${selectedAreaText}%0A%0APlease confirm my order.`;
+
                 const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
-
-                // Notun tab e WhatsApp open kora
                 window.open(whatsappURL, '_blank');
                 
-                // Form ti faka kore deya
                 form.reset();
             });
         });
-
-        function closeModal() {
-            const modal = document.getElementById('success-modal');
-            const modalContent = document.getElementById('modal-content');
-            
-            // Reverse animation
-            modalContent.classList.remove('scale-100', 'opacity-100');
-            modalContent.classList.add('scale-95', 'opacity-0');
-            
-            setTimeout(() => {
-                modal.classList.add('hidden');
-            }, 300);
-        }
     </script>
 </body>
 </html>
