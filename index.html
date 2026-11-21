@@ -12,22 +12,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1094961443518966');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1094961443518966');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
     <script>
         tailwind.config = {
@@ -85,10 +85,6 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
             border: 1px solid rgba(229, 193, 88, 0.15);
         }
 
-        .glass-card-glow {
-            box-shadow: 0 0 35px -5px rgba(229, 193, 88, 0.08);
-        }
-
         /* Gold Border Glow Animation */
         @keyframes border-glow {
             0%, 100% { border-color: rgba(229, 193, 88, 0.2); }
@@ -129,8 +125,8 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
     <!-- Top Announcement Bar -->
     <div class="bg-gradient-to-r from-gold-dark via-gold to-gold-dark text-dark text-center py-2 px-4 font-semibold text-xs sm:text-sm tracking-wide shadow-md">
         <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
-            <span class="inline-block w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
-            <span>🔥 শীতকালীন স্পেশাল অফার - ১,৫০০ টাকা ছাড়ে যেকোনো সাইজ মাত্র ৩,৫০০ টাকায় ক্যাশ অন ডেলিভারিতে অর্ডার করুন!</span>
+            <span class="inline-block w-2 h-2 rounded-full bg-red-600 animate-ping shrink-0"></span>
+            <span>🔥 শীতকালীন স্পেশাল অফার - ১,০০০ টাকা ছাড়ে যেকোনো সাইজ মাত্র ২,৫০০ টাকায় ক্যাশ অন ডেলিভারিতে অর্ডার করুন!</span>
         </div>
     </div>
 
@@ -184,12 +180,12 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
                             <div>
                                 <span class="text-xs text-gray-400 block uppercase tracking-wider">Special Discount Price</span>
                                 <div class="flex items-baseline gap-3">
-                                    <span class="text-3xl sm:text-4xl font-bold text-gradient-gold">BDT ৩,৫০০</span>
-                                    <span class="text-lg text-gray-500 line-through">BDT ৫,০০০</span>
+                                    <span class="text-3xl sm:text-4xl font-bold text-gradient-gold">BDT ২,৫০০</span>
+                                    <span class="text-lg text-gray-500 line-through">BDT ৩,৫০০</span>
                                 </div>
                             </div>
                             <span class="bg-red-500/20 text-red-400 border border-red-500/40 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
-                                Save BDT ১,৫০০ (৩০% Off)
+                                Save BDT ১,০০০ (৩০% Off)
                             </span>
                         </div>
 
@@ -213,10 +209,10 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
                     <!-- Action Buttons -->
                     <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
                         <a href="#order-section" class="btn-gold w-full sm:w-auto text-dark font-bold px-10 py-4 rounded-xl text-sm uppercase tracking-wider flex items-center justify-center gap-3">
-                            <span>অর্ডার করতে চাই - BDT ৩,৫০০</span>
+                            <span>অর্ডার করতে চাই - BDT ২,৫০০</span>
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
-                        <button onclick="openSizeModal()" class="w-full sm:w-auto px-6 py-4 rounded-xl border border-gold/40 text-gold hover:bg-gold/10 transition-colors text-sm font-semibold flex items-center justify-center gap-2">
+                        <button type="button" onclick="openSizeModal()" class="w-full sm:w-auto px-6 py-4 rounded-xl border border-gold/40 text-gold hover:bg-gold/10 transition-colors text-sm font-semibold flex items-center justify-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M12 7h.01M15 7h.01M12 4h.01M15 4h.01M9 4h.01"></path></svg>
                             <span>সাইজ গাইড দেখুন</span>
                         </button>
@@ -243,7 +239,7 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
 
                         <div class="absolute bottom-6 left-6 right-6 bg-dark/90 backdrop-blur-md border border-gold/30 p-4 rounded-xl flex items-center justify-between shadow-xl">
                             <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold">
+                                <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold shrink-0">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                                 </div>
                                 <div class="text-left">
@@ -349,7 +345,7 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
 
                 <div class="glass-card p-6 rounded-xl">
                     <div class="flex items-center gap-1 text-gold mb-3 text-sm">★★★★★</div>
-                    <p class="text-gray-300 text-xs italic mb-4">"আর্বান এরিয়াতে ২ দিনের মধ্যেই পেয়েছি। জ্যাকেটের ফিটিং একদম পারফেক্ট হয়েছে। কাপড়ের লেদার ফিনিশিং খাস!"</p>
+                    <p class="text-gray-300 text-xs italic mb-4">"আর্বান এরিয়াতে ২ দিনের মধ্যেই পেয়েছি। জ্যাকেটের ফিটিং একদম পারফেক্ট হয়েছে। জ্যাকেটের লেদার ফিনিশিং অসাধারণ!"</p>
                     <div class="text-xs font-bold text-white">তানভীর আহমেদ <span class="text-gray-500 font-normal">উত্তরা, ঢাকা</span></div>
                 </div>
 
@@ -372,10 +368,10 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
                 <div class="lg:col-span-5 bg-gradient-to-b from-surface2 to-surface p-8 sm:p-10 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-gold/15">
                     <div>
                         <div class="inline-block bg-gold/10 text-gold border border-gold/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
-                            Hot Deal Offer - Save ৳১,৫০০
+                            Hot Deal Offer - Save ৳১,০০০
                         </div>
                         <h3 class="text-3xl font-serif font-bold text-white mb-2">অর্ডার নিশ্চিত করুন</h3>
-                        <p class="text-gray-400 text-xs mb-6">ফর্মটি সঠিক তথ্য দিয়ে পূরণ করে "Confirm Order" বাটনে ক্লিক করুন।</p>
+                        <p class="text-gray-400 text-xs mb-6">ফর্মটি সঠিক তথ্য দিয়ে পূরণ করে "অর্ডার কনফার্ম করুন" বাটনে ক্লিক করুন।</p>
 
                         <!-- Product Summary Card -->
                         <div class="bg-dark/60 p-4 rounded-xl border border-white/10 mb-6 flex gap-4 items-center">
@@ -383,8 +379,8 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
                             <div>
                                 <h4 class="text-white text-sm font-bold">Premium Black Leather Jacket</h4>
                                 <div class="flex items-center gap-2 mt-1">
-                                    <p class="text-xs text-gold font-semibold">BDT ৩,৫০০ টাকা</p>
-                                    <span class="text-[11px] text-gray-500 line-through">৫,০০০</span>
+                                    <p class="text-xs text-gold font-semibold">BDT ২,৫০০ টাকা</p>
+                                    <span class="text-[11px] text-gray-500 line-through">৩,৫০০</span>
                                 </div>
                                 <span class="text-[11px] text-green-400 block mt-1">✔ ক্যাশ অন ডেলিভারি প্রযোজ্য</span>
                             </div>
@@ -394,15 +390,15 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
                         <div class="space-y-3 text-xs border-t border-white/10 pt-4 text-gray-300">
                             <div class="flex justify-between text-gray-400">
                                 <span>রেগুলার মূল্য:</span>
-                                <span class="line-through">BDT ৫,০০০ টাকা</span>
+                                <span class="line-through">BDT ৩,৫০০ টাকা</span>
                             </div>
                             <div class="flex justify-between text-green-400">
-                                <span>স্পেশাল ডিসকাউন্ট:</span>
-                                <span>- BDT ১,৫০০ টাকা</span>
+                                <span>স্পেশাল ডিসকাউন্ট (৩০%):</span>
+                                <span>- BDT ১,০০০ টাকা</span>
                             </div>
                             <div class="flex justify-between">
                                 <span>অফার মূল্য:</span>
-                                <span>BDT ৩,৫০০ টাকা</span>
+                                <span>BDT ২,৫০০ টাকা</span>
                             </div>
                             <div class="flex justify-between">
                                 <span>ডেলিভারি চার্জ:</span>
@@ -410,7 +406,7 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
                             </div>
                             <div class="flex justify-between text-base font-bold text-white border-t border-white/10 pt-3">
                                 <span>সর্বমোট মূল্য:</span>
-                                <span id="summary-total-price" class="text-gradient-gold">BDT ৩,৫৮০ টাকা</span>
+                                <span id="summary-total-price" class="text-gradient-gold">BDT ২,৫৮০ টাকা</span>
                             </div>
                         </div>
                     </div>
@@ -474,7 +470,7 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
                             <input type="hidden" id="selected-size" value="M" required>
                             
                             <div class="grid grid-cols-3 gap-3">
-                                <button type="button" onclick="selectSize('M', this)" class="size-pill-btn py-3 border border-gold bg-gold/20 text-gold rounded-xl font-bold text-xs uppercase flex flex-col items-center justify-center gap-1 transition-all">
+                                <button type="button" id="default-size-btn" onclick="selectSize('M', this)" class="size-pill-btn py-3 border border-gold bg-gold/20 text-gold rounded-xl font-bold text-xs uppercase flex flex-col items-center justify-center gap-1 transition-all">
                                     <span>Medium (M)</span>
                                     <span class="text-[10px] text-gray-300 font-normal">Chest 38"</span>
                                 </button>
@@ -527,9 +523,9 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
         <div>
             <div class="flex items-center gap-1.5">
                 <span class="text-[10px] text-gray-400 uppercase">Special Price</span>
-                <span class="text-[10px] text-gray-500 line-through">৳৫,০০০</span>
+                <span class="text-[10px] text-gray-500 line-through">৳৩,৫০০</span>
             </div>
-            <span class="text-base font-bold text-gold">BDT ৩,৫০০</span>
+            <span class="text-base font-bold text-gold">BDT ২,৫০০</span>
         </div>
         <a href="#order-section" class="btn-gold px-6 py-2.5 text-dark font-bold rounded-lg text-xs uppercase tracking-wider">
             এখনই অর্ডার করুন
@@ -537,9 +533,9 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
     </div>
 
     <!-- Size Guide Modal -->
-    <div id="size-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden bg-dark/80 backdrop-blur-md p-4">
+    <div id="size-modal" onclick="if(event.target === this) closeSizeModal()" class="fixed inset-0 z-[100] flex items-center justify-center hidden bg-dark/80 backdrop-blur-md p-4">
         <div class="glass-card p-6 rounded-2xl max-w-md w-full border-gold/30 relative shadow-2xl">
-            <button onclick="closeSizeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+            <button type="button" onclick="closeSizeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
             <h3 class="text-xl font-serif font-bold text-white mb-1">সাইজ মেজারমেন্ট গাইড</h3>
@@ -578,7 +574,7 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
                 </table>
             </div>
 
-            <button onclick="closeSizeModal()" class="w-full btn-gold text-dark font-bold py-3 rounded-xl text-xs uppercase tracking-wider mt-6">
+            <button type="button" onclick="closeSizeModal()" class="w-full btn-gold text-dark font-bold py-3 rounded-xl text-xs uppercase tracking-wider mt-6">
                 গাইড বুঝেছি, এখন সাইজ সিলেক্ট করবো
             </button>
         </div>
@@ -586,14 +582,15 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
 
     <!-- Scripts -->
     <script>
+        const PRODUCT_PRICE = 2500;
+
         // Update Live Price Breakdown
         function updateCalculations() {
             const deliverySelect = document.getElementById('delivery-area');
-            const deliveryCharge = parseInt(deliverySelect.value) || 80;
-            const productPrice = 3500;
-            const totalPrice = productPrice + deliveryCharge;
+            const deliveryCharge = parseInt(deliverySelect.value, 10) || 80;
+            const totalPrice = PRODUCT_PRICE + deliveryCharge;
 
-            document.getElementById('summary-delivery-charge').innerText = `৳ ${deliveryCharge} টাকা`;
+            document.getElementById('summary-delivery-charge').innerText = `৳ ${deliveryCharge.toLocaleString('bn-BD')} টাকা`;
             document.getElementById('summary-total-price').innerText = `BDT ${totalPrice.toLocaleString('bn-BD')} টাকা`;
         }
 
@@ -626,36 +623,33 @@ src="https://www.facebook.com/tr?id=1094961443518966&ev=PageView&noscript=1"
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
                 
-                const name = document.getElementById('name').value;
-                const phone = document.getElementById('phone').value;
-                const address = document.getElementById('address').value;
+                const name = document.getElementById('name').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const address = document.getElementById('address').value.trim();
                 const size = document.getElementById('selected-size').value;
                 
                 const deliverySelect = document.getElementById('delivery-area');
-                const deliveryCharge = parseInt(deliverySelect.value);
+                const deliveryCharge = parseInt(deliverySelect.value, 10) || 80;
                 const selectedAreaText = deliverySelect.options[deliverySelect.selectedIndex].text;
-                const productPrice = 3500;
-                const totalPrice = productPrice + deliveryCharge;
+                const totalPrice = PRODUCT_PRICE + deliveryCharge;
 
-                // ----------------------------------------------------
                 // Facebook Pixel: Purchase Event Tracking
-                // ----------------------------------------------------
                 if (typeof fbq === 'function') {
                     fbq('track', 'Purchase', {
                         value: totalPrice,
                         currency: 'BDT'
                     });
                 }
-                // ----------------------------------------------------
 
                 const whatsappNumber = "8801967939895";
                 
-                const message = `Hello Moriom Style Hut! I want to confirm an order.%0A%0A*Product:* Premium Black Leather Jacket%0A*Size:* ${size}%0A*Regular Price:* BDT ৫,০০০%0A*Discount:* BDT ১,৫০০%0A*Offer Price:* BDT ৩,৫০০%0A*Delivery Charge:* BDT ${deliveryCharge}%0A*Total Bill:* BDT ${totalPrice}%0A%0A*Customer Details:*%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Address:* ${address}%0A*Location Type:* ${selectedAreaText}%0A%0APlease confirm my order.`;
+                const rawMessage = `Hello Moriom Style Hut! I want to confirm an order.\n\n*Product:* Premium Black Leather Jacket\n*Size:* ${size}\n*Regular Price:* BDT ৩,৫০০\n*Discount:* BDT ১,০০০ (৩০% Off)\n*Offer Price:* BDT ২,৫০০\n*Delivery Charge:* BDT ${deliveryCharge}\n*Total Bill:* BDT ${totalPrice}\n\n*Customer Details:*\n*Name:* ${name}\n*Phone:* ${phone}\n*Address:* ${address}\n*Location Type:* ${selectedAreaText}\n\nPlease confirm my order.`;
 
-                const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+                const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(rawMessage)}`;
                 window.open(whatsappURL, '_blank');
                 
                 form.reset();
+                selectSize('M', document.getElementById('default-size-btn'));
                 updateCalculations();
             });
         });
